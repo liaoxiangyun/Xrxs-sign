@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
-    "express": "^4.17.1",
+    "axios": "^0.27.2",
+    "express": "^4.18.2",
     "format-date-time": "^0.3.3",
-    "node-schedule": "^2.0.0",
-    "qs": "^6.10.0"
+    "node-schedule": "^2.1.1",
+    "qs": "^6.11.1"
   },
   "devDependencies": {
     "form-data": "^4.0.0"

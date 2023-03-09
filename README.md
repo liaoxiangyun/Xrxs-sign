@@ -29,7 +29,7 @@
 
 ## 构建
 
-- 推荐使用 Node.js 12 及以上的运行/构建当前项目
+- 推荐使用 Node.js 16 及以上的运行/构建当前项目
 - 可选 Github Actions / 命令行 两种方式运行
 
 ## Github Actions 部署
