@@ -24,10 +24,11 @@ const Holiday = {
         let year = now.getFullYear() + "";
         let month = (now.getMonth() + 1) < 10 ? "0" + (now.getMonth() + 1) : (now.getMonth() + 1) + "";
         let day = now.getDate() < 10 ? "0" + now.getDate() : "" + now.getDate();
-        if (year === "2022") {
-            let dayObj = d_2022[year + month][year + month + day];
-            if (dayObj !== 1) {
-                gl.info("今日为节假日");
+        let yearData = require("./data/" + now.getFullYear() + ".json")
+        if (yearData) {
+            let code = yearData[year + month][year + month + day];
+            if (code !== 1) {
+                gl.info("[" + code + "] 今日为节假日");
                 return true;
             }
         } else {
