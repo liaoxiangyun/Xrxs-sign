@@ -66,7 +66,7 @@ const Sign = {
                 if (res.data) {
                     let data = res.data;
                     if (data.message == "成功") {
-                        let text = `${user.name}打卡成功！ 时间为= ${data.data.clockTime}`
+                        let text = `${user.name}API自动打卡成功！ 时间为= ${data.data.clockTime}`
                         gl.info(text);
                         //webhook
                         webhookUtil.hooks(user.webhook, text)
